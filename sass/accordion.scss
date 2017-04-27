@@ -1,0 +1,36 @@
+$color_blue: #18AFD3;
+
+.accordion{
+    border-top: 1px solid #E5E5E5;
+    margin-top: 40px;
+    max-width: 750px;
+    font-family: "Lato";
+    color:gray;
+    .accord_topic{
+        cursor: pointer;
+        padding: 10px;
+        border-bottom: 1px solid #E5E5E5;
+        .accord_header{
+            position: relative;
+            h4{
+                font-size: 16px;
+                font-weight: 600; 
+                color: $color_blue;
+                i{
+                    position: absolute;
+                    color:dimgray;
+                    right: 10px;
+                    font-size: 17px;
+                }
+            }
+        }
+        .accord_content{
+            display: none;
+           transition: color .2s ease-in;
+            p{  
+                font-size: 15px;                
+                margin: 0;
+            }
+        }
+    }    
+}
