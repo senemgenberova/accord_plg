@@ -1,29 +1,47 @@
-.accordion {
-  border-top: 1px solid #E5E5E5;
-  margin-top: 40px;
+.accordions {
+  margin-top: 20px;
   max-width: 750px;
-  font-family: "Lato";
-  color: gray; }
-  .accordion .accord_topic {
-    cursor: pointer;
-    padding: 10px;
-    border-bottom: 1px solid #E5E5E5; }
-    .accordion .accord_topic .accord_header {
-      position: relative; }
-      .accordion .accord_topic .accord_header h4 {
+  font-family: "Lato"; }
+  .accordions .accord_topic {
+    cursor: pointer; }
+    .accordions .accord_topic .accord_header {
+      position: relative;
+      margin-bottom: 10px; }
+      .accordions .accord_topic .accord_header h4 {
         font-size: 16px;
-        font-weight: 600;
-        color: #18AFD3; }
-        .accordion .accord_topic .accord_header h4 i {
-          position: absolute;
-          color: dimgray;
-          right: 10px;
-          font-size: 17px; }
-    .accordion .accord_topic .accord_content {
-      display: none;
-      transition: color .2s ease-in; }
-      .accordion .accord_topic .accord_content p {
+        font-weight: 600; }
+      .accordions .accord_topic .accord_header i {
+        font-size: 17px; }
+    .accordions .accord_topic .accord_content {
+      display: none; }
+      .accordions .accord_topic .accord_content p {
         font-size: 15px;
         margin: 0; }
+
+.classic_accordion {
+  border-top: 1px solid #E5E5E5;
+  color: gray; }
+  .classic_accordion .accord_topic {
+    padding: 10px;
+    border-bottom: 1px solid #E5E5E5; }
+    .classic_accordion .accord_topic .accord_header h4 {
+      color: #18AFD3; }
+      .classic_accordion .accord_topic .accord_header h4 i {
+        position: absolute;
+        color: dimgray;
+        right: 10px; }
+
+.alternative_accordion {
+  color: white; }
+  .alternative_accordion .accord_topic {
+    background: #18AFD3;
+    padding: 8px 25px;
+    margin-bottom: 15px;
+    border-radius: 5px; }
+    .alternative_accordion .accord_topic .accord_header {
+      position: relative;
+      margin-bottom: 10px; }
+      .alternative_accordion .accord_topic .accord_header h4 .fa {
+        margin-right: 20px; }
 
 /*# sourceMappingURL=accordion.css.map */
